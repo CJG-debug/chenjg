@@ -379,9 +379,9 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
-  count: true
+  enable: true
+  shortname: cdw
+  count: 5
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
   hide: false
@@ -445,7 +445,7 @@ gitalk:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
+baidushare: true
 ##  type: button
 
 # Share
@@ -546,7 +546,7 @@ busuanzi_count:
 
 
 # Tencent analytics ID
-# tencent_analytics:
+tencent_analytics: 66514704
 
 # Tencent MTA ID
 # tencent_mta:
