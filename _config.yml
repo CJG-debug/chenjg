@@ -379,9 +379,9 @@ han: false
 
 # Disqus
 disqus:
-  enable: true
-  shortname: cdw
-  count: 5
+  enable: false
+  shortname: 
+  count: true
   # hide comments (visitors need to click to load the comments)
   # count need to be false when hide is true
   hide: false
@@ -430,7 +430,7 @@ changyan:
 
 # Support for LiveRe comments system.
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-#livere_uid: your uid
+livere_uid: MTAyMC80ODU4NS8yNTA3OQ==
 
 # Support for gitalk comments system.
 gitalk:
