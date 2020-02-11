@@ -3,6 +3,8 @@ layout: page
 type: about
 ---
 ## **个人介绍**  
+<img src="\image\2020-02-11\354d1cb35b9f6980f0e08ac03f42075.jpg" style="zoom:20%;" />
+
 蔡大卫  
 1998.03.27    
 浙江工商大学信息与电子工程学院  
