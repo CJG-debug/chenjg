@@ -6,7 +6,8 @@ title:
   archives: 归档
   categories: 分类
   tags: 标签
-  about: 关于我
+  about: 自我介绍
+  interesting: 有趣的网站
 
 author: 博主
 
@@ -16,6 +17,7 @@ menu:
   categories: 分类
   tags: 标签
   about: 关于我
+  interesting: 快乐
   search: 搜索
   schedule: 日程表
   sitemap: 站点地图
