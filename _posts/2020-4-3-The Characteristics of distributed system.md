@@ -16,7 +16,7 @@ category: 技术博客
 
 CAP理论可以表述为，一个分布式系统最多只能同时满足一致性（Consistency）、可用性（Availability）和分区容忍性（Partition Tolerance） 这第三项中的两项
 
-![img](https://s0.lgstatic.com/i/image3/M01/07/64/Ciqah16ER_SAGmCqAADG3jNX34o901.png)
+![Ciqah16ER_SAGmCqAADG3jNX34o901](\image\2020-04-03\Ciqah16ER_SAGmCqAADG3jNX34o901.png)
 
 **一致性**是指“所有节点同时看到相同的数据”，即更新操作成功并返回客户端完成后，所有节点在同一时间的数据完全一致，等用于所有节点拥有数据的最新版本
 
@@ -44,7 +44,7 @@ AP架构：对于 AP 来说，放弃强一致性，追求分区容错性和可�
 
 Base是三个短语的简写，即基本可用（Basically Available）、软状态（Soft State）和最终一致性（Eventually Consistent）。
 
-![img](https://s0.lgstatic.com/i/image3/M01/08/52/Ciqah16FrueAWLATAABOyQi2X3M251.png)
+![Ciqah16FrueAWLATAABOyQi2X3M251](\image\2020-04-03\Ciqah16FrueAWLATAABOyQi2X3M251.png)
 
 其理论的核心思想是最终一致性，并不是强一致性，每个应用根据自身的业务特点，采用适当的方式达到最终一致性
 
@@ -70,7 +70,7 @@ Base是三个短语的简写，即基本可用（Basically Available）、软状
 
 在互联网邻域的绝大多数场景中，都需要牺牲强一致性来换取系统的高可用性，系统往往只需要保证“最终一致性”
 
-![img](https://s0.lgstatic.com/i/image3/M01/08/52/Ciqah16FruiAGz3eAAIrOBxKnpU229.png)
+![Ciqah16FruiAGz3eAAIrOBxKnpU229](\image\2020-04-03\Ciqah16FruiAGz3eAAIrOBxKnpU229.png)
 
 ##### 强一致性
 
