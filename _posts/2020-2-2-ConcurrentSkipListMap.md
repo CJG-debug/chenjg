@@ -2,7 +2,7 @@
 layout: post
 title: 查找/插入/删除的速度如何趋于线性且支持高并发——ConcurrentSkipListMap!
 tag: 数据结构
-category: 技术博客
+category: Technology blog
 ---
 
 ConcurrentSkipListMap，属于并发集合类，来源于大名鼎鼎的J.U.C，集合并发类的要求是执行速度快，提取数据准，最著名的类便是之前有接触到的ConcurrentHashMap类，通过不断的优化，由刚开始的锁分段到后来的CAS，不断地去提高自身的并发性能，其他便是ConcurrentSkipListMap，CopyOnWriteArrayList，BlockingQueue，虽然使用的频率没有AVL或者红黑树那么高，但是它的实现相对于树来说更加简单。

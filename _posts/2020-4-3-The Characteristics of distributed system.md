@@ -2,7 +2,7 @@
 layout: post
 title: 分布式（一）分布式系统的特点与CAP
 tag: 技术笔记
-category: 技术博客
+category: Technology blog
 ---
 #### 分布式系统的特点
 

@@ -2,7 +2,7 @@
 layout: post
 title: 技术人职业发展方向
 tag: 职业面试与规划
-category: 技术博客
+category: Technology blog
 ---
 ### 技术人职业发展路径
 

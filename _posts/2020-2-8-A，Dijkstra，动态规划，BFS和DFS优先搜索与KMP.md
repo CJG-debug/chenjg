@@ -2,7 +2,7 @@
 layout: post
 title: A星寻路，Dijkstra，动态规划，BFS和DFS优先搜索与KMP！
 tag: 算法
-category: 技术博客
+category: Technology blog
 ---
 
 如题，我试着用一张图尽可能简单解释了这五个算法，仅仅是算法原理，代码与实现还请大家自行尝试
