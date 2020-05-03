@@ -60,7 +60,6 @@ Google邮箱强制要求每一个给Google服务器发送邮件的发送者，�
 
 比特币的POW实现，使用过计算来猜测一个数值（Nonce），得以解决规定的Hash问题，下面是比特币的区块结构，可以看到区块头有个随机数字段，这个就是Nonce值：
 
-![Ciqah16VcOeATZ5AAARuh8uNMzo929](\image\2020-04-25\Ciqah16VcOeATZ5AAARuh8uNMzo929.png)
 
 中本聪在比特币系统中设置了一道题目，通过不断调节Nonce的值，来对区块头算Hash，要求找到一个Nonce值，使得算出来的Hash值满足某个固定值。
 
