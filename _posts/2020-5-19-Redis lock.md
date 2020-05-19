@@ -10,7 +10,7 @@ category: Technology blog
 
 分布式锁的特性
 
-![CgqCHl66QPeAEwYSAABoXEKq3WM722](D:\personalblog\jekyll-theme-next\image\2020-05-19\CgqCHl66QPeAEwYSAABoXEKq3WM722.png)
+![CgqCHl66QPeAEwYSAABoXEKq3WM722](\image\2020-05-19\CgqCHl66QPeAEwYSAABoXEKq3WM722.png)
 
 一般来说，生产环境可用的分布式所需要满足以下几点：
 
