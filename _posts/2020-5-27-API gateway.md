@@ -1,6 +1,6 @@
 ---
 layout: post
-title: RPC远程服务调用
+title: 分布式系统API网关
 tag: 技术笔记
 category: Technology blog
 ---
