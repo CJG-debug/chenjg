@@ -24,7 +24,7 @@ category: Technology blog
 
 服务注册和发现的基本流程如下图所示:
 
-![Ciqc1F7GKL2AdvDaAAGP_eJ6zd0194](D:\personalblog\jekyll-theme-next\image\2020-05-28\Ciqc1F7GKL2AdvDaAAGP_eJ6zd0194.png)
+![Ciqc1F7GKL2AdvDaAAGP_eJ6zd0194](\image\2020-05-28\Ciqc1F7GKL2AdvDaAAGP_eJ6zd0194.png)
 
 首先，在服务启动时，服务提供者会向注册中心注册服务，暴露自己的地址和端口等，注册中心会更新服务列表，服务消费者启动时会向注册中心请求可用的服务地址，并且在本地缓存一份提供这列表，这样在注册中心宕机时仍然可以正常调用服务。
 
@@ -48,11 +48,11 @@ ZooKeeper是一个树形结构的目录服务，支持变更推送，使用ZooKe
 
  在Spring Cloud中，提供了Eureka来实现服务发现功能，Euraka采用的是Server和Client的模式进行设计，Eureka Server 扮演了服务注册中心的角色，为Client提供服务注册和发现的功能。
 
-Eureka Client 通过客户端注册的方式暴露服务，通过注解等方式嵌入到服务提供者的代码中，当服务启动时，服务发现组件会向注册中心注册自身提供的服务，并周期性地发送心跳来更新服务。![CgqCHl7GKNCAURouAAFzGomu7Gs531](D:\personalblog\jekyll-theme-next\image\2020-05-28\CgqCHl7GKNCAURouAAFzGomu7Gs531.png)
+Eureka Client 通过客户端注册的方式暴露服务，通过注解等方式嵌入到服务提供者的代码中，当服务启动时，服务发现组件会向注册中心注册自身提供的服务，并周期性地发送心跳来更新服务。![CgqCHl7GKNCAURouAAFzGomu7Gs531](\image\2020-05-28\CgqCHl7GKNCAURouAAFzGomu7Gs531.png)
 
 如果连续多次心跳不能够发现服务，那么Eureka Server 就会将这个服务节点从服务注册表中移除，各个服务之间会通过注册中心的注册信息来实现调用。
 
-![38fe257229c06bea3dc708b56adea08b](D:\personalblog\jekyll-theme-next\image\2020-05-28\38fe257229c06bea3dc708b56adea08b.png)
+![38fe257229c06bea3dc708b56adea08b](\image\2020-05-28\38fe257229c06bea3dc708b56adea08b.png)
 
 Euerka在Spring Cloud中广泛应用，目前社区中集成的是1.0版本，在后续的版本更新中，Netflix 宣布 Euerka 2.0 闭源，于是开源社区中也出现了许多新的服务发现组件，比如 Spring Cloud Alibaba Nacos。
 
@@ -62,7 +62,7 @@ Nacos是阿里巴巴推出来的一个开源项目，提供了服务注册和发
 
 Nacos的应用和Eureka类似，独立于系统架构，需要部署Nacos Server，除了服务注册和发现之外，Nacos还提供了配置管理，元数据管理和流量管理等功能，并且提供了一个可视化的控制台管理界面。
 
-![image (14).png](https://s0.lgstatic.com/i/image/M00/0E/A7/Ciqc1F7GKNyASZrcAAY4CF3B8qE355.png)
+![image (14).png](/image/M00/0E/A7/Ciqc1F7GKNyASZrcAAY4CF3B8qE355.png)
 
 关于Nacos的更多应用，可以在Nacos的官网上找到相关的文档。
 
