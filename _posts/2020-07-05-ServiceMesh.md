@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Servuce Mesh
+title: Service Mesh
 tag: 技术笔记
 category: Technology blog
 ---
