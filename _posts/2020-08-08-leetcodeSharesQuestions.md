@@ -1,6 +1,12 @@
+---
+layout: post
+title: leetcode股票问题系列总结
+tag: 技术笔记
+category: Technology blog
+---
 ### leetcode股票问题系列总结
 
-<img src="D:\personalblog\jekyll-theme-next\image\2020-08-08\141853.png" alt="141853" style="zoom:200%;" />
+<img src="\image\2020-08-08\141853.png" alt="141853" style="zoom:200%;" />
 
 首先我们对本题所有状态进行一次穷举
 
