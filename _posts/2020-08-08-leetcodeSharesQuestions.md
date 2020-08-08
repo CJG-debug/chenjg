@@ -6,7 +6,7 @@ category: Technology blog
 ---
 ### leetcode股票问题系列总结
 
-<img src="\image\2020-08-08\141853.png" alt="141853" style="zoom:200%;" />
+![141853](\image\2020-08-08\141853.png)
 
 首先我们对本题所有状态进行一次穷举
 
