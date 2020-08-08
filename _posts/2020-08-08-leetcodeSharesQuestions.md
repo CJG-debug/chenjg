@@ -10,7 +10,7 @@ category: Technology blog
 
 首先我们对本题所有状态进行一次穷举
 
-```Java
+```java
 for 状态1 in 状态1的所有取值：
     for 状态2 in 状态2的所有取值：
         for ...
@@ -21,7 +21,7 @@ for 状态1 in 状态1的所有取值：
 
 所以本类题目所有的状态其实有三个，第一个是天数，第二个是允许交易的最大次数，第三个则是当前的持有状态，在这里我们通过一个三维数组实现
 
-```Java
+```java
 //这里第一个i代表天数，第二个k代表当前交易剩下的次数，第三0 or 1则代表了持有和未持有的两种状态。
 profit[i][k][0 or 1]
 //i需要小于总的交易天数且大于等于0，k剩下的交易次数则必须小于总的交易次数且大于等于1。
@@ -35,7 +35,7 @@ for 0 <= i < n:
 
 那我们每天有哪些可能性呢？我们来列举一下
 
-```Java
+```java
 profit[i][k][0] = max(profit[i-1][k][0], profit[i-1][k][1] + prices[i])
               max(   选择不做操作 ,             选择卖出      )
 
@@ -66,7 +66,7 @@ profit[i][0][1] = -infinity
 
 再整理一下，便可以得到整套系列题的通用解法
 
-```Java
+```java
 base case：
 profit[-1][k][0] = profit[i][0][0] = 0
 profit[-1][k][1] = profit[i][0][1] = -infinity
@@ -80,7 +80,7 @@ profit[i][k][1] = max(profit[i-1][k][1], profit[i-1][k-1][0] - prices[i])
 
 我们直接带入框架可得到
 
-```Java
+```java
 profit[i][1][0] = max(profit[i-1][1][0], profit[i-1][1][1] + prices[i])
 profit[i][1][1] = max(profit[i-1][1][1], profit[i-1][0][0] - prices[i]) 
             = max(profit[i-1][1][1], -prices[i])
@@ -88,7 +88,7 @@ profit[i][1][1] = max(profit[i-1][1][1], profit[i-1][0][0] - prices[i])
 
 简化后，我们直接写出代码
 
-```Java
+```java
 public static int maxProfit(int[] prices) {
     //数组为空或长度为0时没有收益返回零
         if(prices == null || prices.length == 0)
@@ -115,7 +115,7 @@ public static int maxProfit(int[] prices) {
 
 这里有一个变化，就是不会对你的交易次数做限制，因此我们的代码变化一下
 
-```Java
+```java
   public int maxProfit(int[] prices) {
            if(prices == null || prices.length == 0)
             return 0;
@@ -138,7 +138,7 @@ public static int maxProfit(int[] prices) {
 
 在这里我们的交易次数被限制了，变成了2次，因此我们的引入k值。
 
-```Java
+```java
 public int maxProfit(int[] prices) {
     if(prices == null || prices.length == 0)
             return 0;
@@ -173,7 +173,7 @@ public int maxProfit(int[] prices) {
 
 本来我开始的解法是
 
-```Java
+```java
   if(prices == null || prices.length == 0)
             return 0;
         int n = prices.length;
@@ -200,7 +200,7 @@ k为10亿！？
 
 远远的超过了数组长度，也就是说，我可以无限交易，这样便可以不用讨论动态规划，直接退化贪心算法即可解决问题，k >= n / 2就可以，买入卖出毕竟需要两天
 
-```Java
+```java
  public int maxProfit(int k, int[] prices) {
          if(prices == null || prices.length == 0)
             return 0;
